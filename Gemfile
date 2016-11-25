@@ -54,3 +54,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
   gem 'paperclip'
   gem 'kaminari'
   gem "font-awesome-rails"
+  gem 'unicorn'
