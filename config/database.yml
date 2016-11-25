@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: sukima_production
-  username: railsapp
+  username: root
   password: <%= ENV['SUKIMA_DATABASE_PASSWORD'] %>
