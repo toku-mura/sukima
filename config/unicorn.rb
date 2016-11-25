@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-@app_path = '/XXXX/sukima'
+@app_path = '/home/vpsuser/web/public/sukima'
 working_directory @app_path
 
 worker_processes 4
