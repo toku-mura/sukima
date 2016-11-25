@@ -1,14 +1,27 @@
     <header>
-        <div class="header-content">
+        <div class="header-content text-bb">
             <div class="header-content-inner">
                 <h1 class="text-bb"><br><br><br><smal>さあ,あなたのプランを<br>実現しよう。</smal></h1>
                 <hr>
+
                 <h4 class="text-bb">エキスパートによるアイデア・企画の実行支援</h4>
-                 <div class="col-sm-4 col-sm-offset-4">
+      <div class="col-sm-4 col-sm-offset-4">
        <%= image_tag "sukimalogo_1.gif" ,class: "img-responsive", alt: "SUKIMA logo" %>
        </div>
-            </div>
         </div>
+
+<div class="col-sm-6 col-sm-offset-3">
+<%= form_tag '/contacts', method: :post do %>
+  <h4>
+    事前登録
+  </h4>
+ <textarea cols="80" name="mailadd" placeholder="メールアドレス" rows="1.5" class=”form-inline”></textarea>
+ <input type="submit" value="事前登録">
+<% end %>
+</div>
+
+</div>
+
     </header>
 
     <section class="bg-warning" id="about">
@@ -70,7 +83,7 @@
         </div>
     </section>
 
-    <section class="bg-warning" id="zirei">
+<section class="bg-warning" id="zirei">
      <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -78,10 +91,9 @@
                     <hr class="primary">
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row no-gutter"></div>
                 <div class="col-lg-4 col-sm-4">
                     <a class="portfolio-box">
                         <%= image_tag "portfolio/1-1.jpg", class: "img-responsive", alt: "資料作成" %>
@@ -96,17 +108,17 @@
                             </div>
                         </div>
                     </a>
-                    <div><p class="text-body">アイデア・企画を具体化するための情報収集をサポートします。業界や競合の市場動向やビジネスモデルの分析をレポートにしてご提供します。
-                    </p></div>
+                    <div>
+                      <p class="text-body">アイデア・企画を具体化するための情報収集をサポートします。業界や競合の市場動向やビジネスモデルの分析をレポートにしてご提供します。
+                      </p>
+                    </div>
+                  <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-block btn-danger" data-toggle="modal" data-target="#myModal-1">
+                    事例紹介
+                    </button>
+                  <div class="row"><p><br></p></div>
+                  </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-sm btn-block btn-danger" data-toggle="modal" data-target="#myModal-1">
-  事例紹介
-</button>
-<div class="row"><p><br></p></div>
-
-
-</div>
 
 <div class="col-lg-4 col-sm-4">
   <a class="portfolio-box">
@@ -154,6 +166,7 @@
   事例紹介（準備中）
 </button>
 <div class="row"><p><br></p></div>
+
 </div>
 </div>
             
@@ -422,15 +435,15 @@
          
     </section>
 
-  <section class="bg-warning" id="contact">
+<section class="bg-warning" id="contact">
       
-      <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">お問い合わせ</h2>
-                    <hr class="primary">
-                </div>
-        　　</div>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">お問い合わせ</h2>
+            <hr class="primary">
+        </div>
+    </div>
 
     <div class="row">
 　　　<div class="col-lg-12">
@@ -466,6 +479,7 @@
           <h1 class="text-info"><strong>06-6251-3560</strong></h1><p><small>※10時〜18時/土日・祝日・年末年始を除く</small>
           </p>
           </div>
+        </div>
 
          <div class="content col-lg-8 col-md-12">
           <div>
@@ -481,6 +495,6 @@
    </div>
  </div>
 
-   </div> 
+</div> 
        
-    </section>
+</section>
